@@ -175,7 +175,8 @@ hamburger.on({
 
 // this is carousele section -------->
 $('.carousel').slick({
-  speed:1000,
+  arrows:true,
+  //speed:1000,
   prevArrow: '<button class="slide-arrow prev-arrow"></button>',
   nextArrow: '<button class="slide-arrow next-arrow"></button>'
 });

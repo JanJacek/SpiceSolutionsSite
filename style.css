@@ -11,6 +11,9 @@
 /* helpers */
 
 body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   font-family: Jost;
   font-weight: 200;
@@ -24,17 +27,14 @@ body {
 /* about is board wit information about spice solutins 
 fade in when pointer is on the center of the clock */
 .about {
-  padding: 30px;
-  position: absolute;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   animation-duration: 2s;
   animation-name: slidein;
   animation-direction: alternate;
-  margin-left: 0%;
-  width: 100%;
-  height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.85);
-  /* pointer-events: none; */
 }
 @keyframes slidein {
   from {
@@ -199,6 +199,7 @@ img.clock {
     transform: rotate(-45deg);
   }
 }
+/* CLIENT CHANGE */
 /* pause clock rotating animation is of because of client decision*/
 
 /*.opening:hover .clock {
@@ -213,14 +214,14 @@ img.clock {
     animation: none;
   }
 } */
+
+
 /* product section */
 .bow {
   max-height: 320px;
 }
 /* =============== */
 /*   eC  section   */
-.product {
-}
 .eC {
   margin-top: 40px;
   width: 100%;
@@ -229,40 +230,39 @@ img.clock {
   align-items: flex-start;
 }
 /* carousele section */
-.carousel {
+/* .carousel {
   max-width: 800px;
   margin: -80px auto;
-}
-ul {
-  /* width: 700px; */
-  margin: 0 auto;
-}
-li img {
-  max-width: 800px;
-  margin: 0 auto;
-}
+} */
 
+img.phones {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto; /* it centers any block level element */
+}
 .slide-arrow {
   position: absolute;
   top: 30%;
 }
 .prev-arrow {
-  left: 10px;
+  left: 0px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 15px solid #113463;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-right: 40px solid #fab700;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 .next-arrow {
-  right: 10px;
+  right: 0px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 15px solid #113463;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-left: 40px solid #fab700;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* footer section */
