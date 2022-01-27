@@ -218,7 +218,7 @@ img.clock {
 
 /* product section */
 .bow {
-  max-height: 320px;
+  max-height: 420px;
 }
 /* =============== */
 /*   eC  section   */
@@ -230,41 +230,42 @@ img.clock {
   align-items: flex-start;
 }
 /* carousele section */
-/* .carousel {
-  max-width: 800px;
-  margin: -80px auto;
-} */
+/* .carousel{
+  visibility: hidden;
+}
+.carousel.slick-initialized {
+  visibility: visible;
+}*/
+.carousel{
 
-img.phones {
-  height: calc(50vh - 100px);
-  width: auto;
-  margin: 0 auto; /* it centers any block level element */
-}
-.slide-arrow {
+  width: 700px;
+  margin: -100px auto;
+} 
+.slide-arrow{
   position: absolute;
-  top: 30%;
+  top: 50%;
+  margin-top: -15px;
 }
-.prev-arrow {
-  left: 0px;
+.prev-arrow{
+  left: -50px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 40px solid #fab700;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-right: 15px solid #e6b30f;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
   background-color: rgba(0, 0, 0, 0);
 }
-.next-arrow {
-  right: 0px;
+.next-arrow{
+  right: -50px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 40px solid #fab700;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-left: 15px solid #e6b30f;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
   background-color: rgba(0, 0, 0, 0);
 }
-
 /* footer section */
 
 footer {

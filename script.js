@@ -40,6 +40,12 @@ areaA.addEventListener('click', function(){
   console.log("zwycięstwo");
   document.querySelector(".product").classList.remove("hide");
   document.querySelector(".product").classList.add("about");
+  $('.carousel').slick({
+    speed: 1000,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
+  
 })
 areaB.addEventListener('click', function(){
   console.log("zwycięstwo");
@@ -174,12 +180,13 @@ hamburger.on({
 })
 
 // this is carousele section -------->
-$('.carousel').slick({
-  arrows:true,
-  //speed:1000,
-  prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-  nextArrow: '<button class="slide-arrow next-arrow"></button>'
-});
+// $('.carousel').slick({
+//   arrows:true,
+//   speed:1000,
+//   prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+//   nextArrow: '<button class="slide-arrow next-arrow"></button>'
+// });
+
 
 // this is ratatin arrow section ------->
 var offset = img.offset();
