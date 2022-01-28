@@ -6,7 +6,10 @@ let areaB = document.querySelector(".areaB");
 let areaC = document.querySelector(".areaC");
 let areaD = document.querySelector(".areaD");
 let areaE = document.querySelector(".areaE");
-let closeLogo = document.querySelector(".cleseingLogo");
+let closeLogoEC = document.querySelector(".cleseingLogoEC");
+let closeLogoEW = document.querySelector(".cleseingLogoEW");
+let closeLogoEG = document.querySelector(".cleseingLogoEG");
+let closeLogoES = document.querySelector(".cleseingLogoES");
 let spcesol = document.querySelector('h1')
 let i = 899;
 
@@ -15,57 +18,91 @@ let hamburger = $(".hamburger");
 let line = $(".line");
 let menuOpen;
 
-// this is what mouseover on center of the clock does section 
+// this is click on stopr center section 
 areaE.addEventListener('mouseover', function(){
-  console.log("zwycięstwo");
   document.querySelector(".clockArrow").src = "./assets/arrowboldgreen.png";
 })
 areaE.addEventListener('click', function(){
-  console.log("zwycięstwo");
   document.querySelector(".intro").classList.remove("hide");
   document.querySelector(".intro").classList.add("about");
 })
 areaE.addEventListener('mouseleave', function(){
-  console.log("zwycięstwo 2");
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
 })
 spcesol.addEventListener('click', function(){
-  console.log("zwycięstwo 2");
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
   document.querySelector(".intro").classList.add("hide");
   document.querySelector(".intro").classList.remove("about");
 })
-// this is click on stoper buton section 
+
+ // this is click on one of four buttons section \\
+// ============================================== \\
 areaA.addEventListener('click', function(){
-  console.log("zwycięstwo");
-  document.querySelector(".product").classList.remove("hide");
-  document.querySelector(".product").classList.add("about");
-  $('.carousel').slick({
+  // console.log("show eCurcuma article");
+  document.querySelector(".productEC").classList.remove("hide");
+  document.querySelector(".productEC").classList.add("about");
+  $('.carouselc').slick({
     speed: 1000,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
-  
 })
+
 areaB.addEventListener('click', function(){
-  console.log("zwycięstwo");
-  document.querySelector(".product").classList.remove("hide");
-  document.querySelector(".product").classList.add("about");
+//  alert("sekcja eWasabi jest jeszcze w budowie");
+  document.querySelector(".productEW").classList.remove("hide");
+  document.querySelector(".productEW").classList.add("about");
+  $('.carouselw').slick({
+    speed: 1000,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
 })
 areaC.addEventListener('click', function(){
-  console.log("zwycięstwo");
-  document.querySelector(".product").classList.remove("hide");
-  document.querySelector(".product").classList.add("about");
+  // alert("sekcja eGinger jest jeszcze w budowie");
+  document.querySelector(".productEG").classList.remove("hide");
+  document.querySelector(".productEG").classList.add("about");
+  $('.carouselg').slick({
+    speed: 1000,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
 })
 areaD.addEventListener('click', function(){
-  console.log("zwycięstwo");
-  document.querySelector(".product").classList.remove("hide");
-  document.querySelector(".product").classList.add("about");
+  // alert("sekcja eSaffon jest jeszcze w budowie");
+  document.querySelector(".productES").classList.remove("hide");
+  document.querySelector(".productES").classList.add("about");
+  $('.carousels').slick({
+    speed: 1000,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
 })
-closeLogo.addEventListener('click', function(){
-  console.log("zwycięstwo 2");
-  document.querySelector(".product").classList.add("hide");
-  document.querySelector(".product").classList.remove("about");
+
+//closeing product article with logo section
+
+closeLogoEC.addEventListener('click', function(){
+  console.log('zamknij ec');
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("hide");
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.remove("about");
+})
+
+closeLogoEW.addEventListener('click', function(){
+  console.log('zamknij ew');
+  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.remove("about");
+})
+closeLogoEG.addEventListener('click', function(){
+  console.log('zamknij eg');
+  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.remove("about");
+})
+closeLogoES.addEventListener('click', function(){
+  console.log('zamknij es');
+  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.remove("about");
 })
 
 // make clock responsive the clock section ------->
@@ -94,7 +131,6 @@ window.onresize = function(){
 //this is clock buttons service ------------>
 areaA.addEventListener("mouseover", funca);
 areaA.addEventListener("mouseleave", funcno);
-areaA.addEventListener("click", eCarticle);
 
 areaB.addEventListener("mouseover", funcb);
 areaB.addEventListener("mouseleave", funcno);
@@ -111,7 +147,7 @@ function funcno(){
 }
 
 function funca(){
-  console.log('testA');
+  // console.log('testA');
   stoper.src = "./assets/stoper-01-ec.png";
 }
 function funcb(){
@@ -125,17 +161,6 @@ function funcc(){
 function funcd(){ 
   // console.log('testD');
   stoper.src = "./assets/stoper-01-es.png";
-}
-// this is function for provide to product section pobalby to delate again site dont response when delated -------->
-function eCarticle(){
-  console.log('jest klik na eC');
-  $('.stoper').addClass('vanish');
-  function addHideClass(){
-    $('.stoper').addClass('hide');
-    $('.eCurcuma').addClass('appear');
-    $('.eCurcuma').removeClass("hide");
-  };
-  window.setTimeout(addHideClass, 1100);
 }
 
 // this is menu section -------->
