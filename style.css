@@ -20,7 +20,7 @@ body {
   color: rgb(241, 241, 241);
   background-image: url("./assets/trang.png");
   background-size: 40px 40px;
-  background-color: rgba(0, 0, 0, 0.925);
+  background-color: rgba(0, 0, 0, 0.938);
   justify-content: center;
 }
 
@@ -160,7 +160,7 @@ a {
 }
 @media screen and (max-width: 400px) {
   .opening {
-    margin: 50px auto;
+    padding: 0px auto;
   }
 }
 div.clock {
@@ -219,6 +219,11 @@ img.clock {
 .bow {
   max-height: 420px;
 }
+@media screen and (max-width: 400px) {
+  .bow {
+    max-height: 120px;
+  }
+}
 /* =============== */
 /*   eC  section   */
 .eC {
@@ -260,13 +265,12 @@ img.clock {
 
 /*  Carousel section */
 .carousel {
-  width: 840px;
+  width: 740px;
 }
 
-
-.carousel__text{
- width: 840px;
- padding: 20px;
+.carousel__text {
+  width: 740px;
+  padding: 20px;
 }
 .sliderEC {
   margin: -100px auto;
@@ -287,7 +291,79 @@ img.clock {
 .sliderES {
   margin: -100px auto;
 }
-
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  .carousel {
+    width: 240px;
+  }
+  .sliderEC {
+    margin: 0px auto;
+  }
+  .moble {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mobilesize {
+    padding: 100px;
+  }
+  .eC {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0px 0px 0px 0px;
+  }
+  .eW {
+    align-items: flex-end;
+  }
+  .carousel__text {
+  }
+  .eG {
+    align-items: flex-start;
+  }
+  .eS {
+    align-items: flex-start;
+  }
+  #eC {
+    padding: 0px;
+  }
+  #eW {
+    padding: 0px;
+  }
+  #eG {
+    padding: 0px;
+  }
+  #eS {
+    padding: 0px;
+  }
+  .cleseingLogoEC {
+    display: none;
+  }
+  .cleseingLogoEW {
+    display: none;
+  }
+  .cleseingLogoEG {
+    display: none;
+  }
+  .cleseingLogoES {
+    display: none;
+  }
+  .mobile {
+    width: 300px;
+    display: block;
+  }
+  p {
+    max-width: 240px;
+  }
+  .boweS {
+    margin-bottom: 30px;
+  }
+}
 /* Carousele arrow basic */
 .slide-arrow {
   position: absolute;
@@ -339,7 +415,7 @@ img.clock {
 }
 /* footer section */
 
-.intro{
+.intro {
   padding: 100px;
 }
 footer {

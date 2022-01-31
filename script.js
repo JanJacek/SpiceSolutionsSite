@@ -114,6 +114,7 @@ lmec.addEventListener('click', function(){
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
   document.querySelector(".intro").classList.add("hide");
   document.querySelector(".intro").classList.remove("about");
+  
   document.querySelector(".productEC").classList.remove("hide");
   document.querySelector(".productEC").classList.add("about");
   $('.carouselc').slick({
