@@ -18,6 +18,15 @@ let hamburger = $(".hamburger");
 let line = $(".line");
 let menuOpen;
 
+// section right menu
+
+let lmec = document.querySelector(".menu-item-ec")
+let lmew = document.querySelector(".menu-item-ew")
+let lmeg = document.querySelector(".menu-item-eg")
+let lmes = document.querySelector(".menu-item-es")
+let lmek = document.querySelector(".menu-item-k")
+
+
 // this is click on stopr center section 
 areaE.addEventListener('mouseover', function(){
   document.querySelector(".clockArrow").src = "./assets/arrowboldgreen.png";
@@ -43,6 +52,8 @@ areaA.addEventListener('click', function(){
   document.querySelector(".productEC").classList.add("about");
   $('.carouselc').slick({
     speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
@@ -54,6 +65,8 @@ areaB.addEventListener('click', function(){
   document.querySelector(".productEW").classList.add("about");
   $('.carouselw').slick({
     speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
@@ -64,6 +77,8 @@ areaC.addEventListener('click', function(){
   document.querySelector(".productEG").classList.add("about");
   $('.carouselg').slick({
     speed: 1000,
+    slidesToShow:1,
+    slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
@@ -74,10 +89,162 @@ areaD.addEventListener('click', function(){
   document.querySelector(".productES").classList.add("about");
   $('.carousels').slick({
     speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
 })
+
+// right nav section and it's repeted uper section
+lmec.addEventListener('click', function(){
+  // console.log("show eCurcuma article");
+  console.log('zamknij ew');
+  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.remove("about");
+
+  console.log('zamknij eg');
+  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.remove("about");
+  
+  console.log('zamknij es');
+  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.remove("about");
+
+  document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+  document.querySelector(".intro").classList.add("hide");
+  document.querySelector(".intro").classList.remove("about");
+  document.querySelector(".productEC").classList.remove("hide");
+  document.querySelector(".productEC").classList.add("about");
+  $('.carouselc').slick({
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
+})
+
+lmew.addEventListener('click', function(){
+  console.log('zamknij ec');
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("hide");
+  //console.log(document.querySelector(".productEC"));
+
+  document.querySelector(".productEC").classList.remove("about");
+  document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+  document.querySelector(".intro").classList.add("hide");
+  document.querySelector(".intro").classList.remove("about");
+
+  console.log('zamknij eg');
+  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.remove("about");
+
+  console.log('zamknij es');
+  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.remove("about");
+
+//  alert("sekcja eWasabi jest jeszcze w budowie");
+  document.querySelector(".productEW").classList.remove("hide");
+  document.querySelector(".productEW").classList.add("about");
+  $('.carouselw').slick({
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
+})
+lmeg.addEventListener('click', function(){
+  console.log('zamknij ec');
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("hide");
+  //console.log(document.querySelector(".productEC"));
+
+  console.log('zamknij ew');
+  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.remove("about");
+
+  document.querySelector(".productEC").classList.remove("about");
+  document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+
+  console.log('zamknij es');
+  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.remove("about");
+
+  document.querySelector(".intro").classList.add("hide");
+  document.querySelector(".intro").classList.remove("about");
+  // alert("sekcja eGinger jest jeszcze w budowie");
+  document.querySelector(".productEG").classList.remove("hide");
+  document.querySelector(".productEG").classList.add("about");
+  $('.carouselg').slick({
+    speed: 1000,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
+})
+lmes.addEventListener('click', function(){
+
+  console.log('zamknij ec');
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("hide");
+  //console.log(document.querySelector(".productEC"));
+
+  console.log('zamknij ew');
+  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.remove("about");
+
+  console.log('zamknij eg');
+  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.remove("about");
+
+  document.querySelector(".productEC").classList.remove("about");
+  document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+  document.querySelector(".intro").classList.add("hide");
+  document.querySelector(".intro").classList.remove("about");
+  // alert("sekcja eSaffon jest jeszcze w budowie");
+  document.querySelector(".productES").classList.remove("hide");
+  document.querySelector(".productES").classList.add("about");
+  $('.carousels').slick({
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    });
+})
+lmek.addEventListener('mouseover', function(){
+  document.querySelector(".clockArrow").src = "./assets/arrowboldgreen.png";
+})
+lmek.addEventListener('click', function(){
+
+  console.log('zamknij ec');
+  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("hide");
+  //console.log(document.querySelector(".productEC"));
+
+  console.log('zamknij ew');
+  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.remove("about");
+
+  console.log('zamknij eg');
+  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.remove("about");
+
+  console.log('zamknij es');
+  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.remove("about");
+
+  document.querySelector(".productEC").classList.remove("about");
+  document.querySelector(".intro").classList.remove("hide");
+  document.querySelector(".intro").classList.add("about");
+})
+lmek.addEventListener('mouseleave', function(){
+  document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+})
+
 
 //closeing product article with logo section
 
