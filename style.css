@@ -59,14 +59,14 @@ fade in when pointer is on the center of the clock */
 }
 .text {
   font-family: Jost, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 p {
-  font-size: 20px;
+  margin:0px;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-left: 30px;
 }
 p.thin {
   font-weight: 100;
@@ -264,12 +264,17 @@ img.clock {
 }
 
 /*  Carousel section */
-.carousel {
-  width: 740px;
+/* .carousel {
+  width: 700px;
+}
+.slick-list{
+  width: 600px;
 }
 
 .carousel__text {
-  width: 740px;
+  overflow:auto;
+  width: 742px;
+  height: 240px;
   padding: 20px;
 }
 .sliderEC {
@@ -290,13 +295,32 @@ img.clock {
 }
 .sliderES {
   margin: -100px auto;
+} */
+.carousel__wrapper{
+  margin:-100px 28%
 }
+.carousel{
+  margin: 0 auto;
+}
+.carousel__element{
+  display: table;
+}
+img.carousel__photo{
+  width: 100%;
+  height: auto;
+}
+.carousel__text {
+  max-height: 350px !important;;
+  overflow-y: scroll ;
+}
+
 .mobile {
   display: none;
 }
+
 @media screen and (max-width: 400px) {
   .carousel {
-    width: 240px;
+    width: 200px;
   }
   .sliderEC {
     margin: 0px auto;
@@ -306,9 +330,7 @@ img.clock {
   }
 }
 @media screen and (max-width: 400px) {
-  .mobilesize {
-    padding: 100px;
-  }
+
   .eC {
     padding: 0px;
     width: 100%;
@@ -320,8 +342,6 @@ img.clock {
   }
   .eW {
     align-items: flex-end;
-  }
-  .carousel__text {
   }
   .eG {
     align-items: flex-start;
@@ -340,6 +360,18 @@ img.clock {
   }
   #eS {
     padding: 0px;
+  }
+  .bowec{
+    padding: 30px;
+  }
+  .bowew{
+    padding: 30px;
+  }
+  .boweg{
+    padding: 30px;
+  }
+  .bowes{
+    padding: 30px;
   }
   .cleseingLogoEC {
     display: none;

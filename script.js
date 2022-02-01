@@ -55,8 +55,18 @@ areaA.addEventListener('click', function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
-    });
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    // responsive: [
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
+    
+  });
 })
 
 areaB.addEventListener('click', function(){
@@ -68,8 +78,17 @@ areaB.addEventListener('click', function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
-    });
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    responsive: [
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]  
+  });
 })
 areaC.addEventListener('click', function(){
   // alert("sekcja eGinger jest jeszcze w budowie");
@@ -80,7 +99,16 @@ areaC.addEventListener('click', function(){
     slidesToShow:1,
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    responsive: [
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
     });
 })
 areaD.addEventListener('click', function(){
@@ -92,8 +120,17 @@ areaD.addEventListener('click', function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
-    });
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    responsive: [
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ] 
+  });
 })
 
 // right nav section and it's repeted uper section
