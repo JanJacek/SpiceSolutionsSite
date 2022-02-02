@@ -23,9 +23,15 @@ body {
   justify-content: center;
 }
 
-#wrapper{
+#wrapper {
   z-index: -1;
-  background: linear-gradient(320deg, #000000c2, #00000094, #0000006b, #00000038);
+  background: linear-gradient(
+    320deg,
+    #000000c2,
+    #00000094,
+    #0000006b,
+    #00000038
+  );
   width: 100vw;
   height: 100vh;
   background-size: 400% 400%;
@@ -125,7 +131,7 @@ fade in when pointer is on the center of the clock */
   margin-left: 0px;
 }
 p {
-  margin:0px;
+  margin: 0px;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -215,11 +221,11 @@ a {
 /* this is main content section */
 
 /* this is clock main page css section */
-.opening {
+/* .opening {
   margin: 0px auto;
   width: 100wh;
   height: 100wh;
-}
+} */
 @media screen and (max-width: 400px) {
   .opening {
     padding: 0px auto;
@@ -229,30 +235,38 @@ a {
 div.clock {
   /* text-align: center; */
   position: relative;
-  top:0;
-  left: 0;
+  /* top:0;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .clockArrow {
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   /* width: 1px; */
-  height: auto;
+  /* height: auto; */
   pointer-events: none;
-  margin: 0px auto;
-  width: 800px;
+  /* margin: 0px auto; */
+  /* width: 800px; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 img.clock {
   position: relative;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   transform: rotate(-45deg);
   /* width: 1px; */
   /* height: auto; */
   animation: rotate 6s ease;
-  width: 800px;
+  /* width: 800px; */
 }
 /* END of pause clock rotating animation */
 @keyframes rotate {
@@ -370,22 +384,22 @@ img.clock {
 .sliderES {
   margin: -100px auto;
 } */
-.carousel__wrapper{
-  margin:-100px 28%
+.carousel__wrapper {
+  margin: -100px 28%;
 }
-.carousel{
+.carousel {
   margin: 0 auto;
 }
-.carousel__element{
+.carousel__element {
   display: table;
 }
-img.carousel__photo{
+img.carousel__photo {
   width: 100%;
   height: auto;
 }
 .carousel__text {
-  max-height: 350px !important;;
-  overflow-y: scroll ;
+  max-height: 350px !important;
+  overflow-y: scroll;
 }
 /* ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -413,7 +427,6 @@ img.carousel__photo{
   }
 }
 @media screen and (max-width: 400px) {
-
   .eC {
     padding: 0px;
     width: 100%;
@@ -444,16 +457,16 @@ img.carousel__photo{
   #eS {
     padding: 0px;
   }
-  .bowec{
+  .bowec {
     padding: 30px;
   }
-  .bowew{
+  .bowew {
     padding: 30px;
   }
-  .boweg{
+  .boweg {
     padding: 30px;
   }
-  .bowes{
+  .bowes {
     padding: 30px;
   }
   .cleseingLogoEC {
@@ -549,6 +562,6 @@ footer {
   max-width: 43px;
   padding: 0;
 }
-#home{
-  margin:0px;
+#home {
+  margin: 0px;
 }
