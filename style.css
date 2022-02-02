@@ -14,14 +14,75 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  margin: 0;
   font-family: Jost;
   font-weight: 200;
   color: rgb(241, 241, 241);
   background-image: url("./assets/trang.png");
-  background-size: 40px 40px;
-  background-color: rgba(0, 0, 0, 0.938);
+  background-size: 100px 100px;
+  background-color: rgba(0, 0, 0, 0.863);
   justify-content: center;
+}
+
+#wrapper{
+  z-index: -1;
+  background: linear-gradient(320deg, #000000c2, #00000094, #0000006b, #00000038);
+  width: 100vw;
+  height: 100vh;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 28s ease infinite;
+  -moz-animation: gradient 28s ease infinite;
+  animation: gradient 28s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 17%;
+  }
+  25% {
+    background-position: 100% 84%;
+  }
+  50% {
+    background-position: 17% 0%;
+  }
+  75% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 17%;
+  }
+  25% {
+    background-position: 100% 84%;
+  }
+  50% {
+    background-position: 17% 0%;
+  }
+  75% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 17%;
+  }
+  25% {
+    background-position: 100% 84%;
+  }
+  50% {
+    background-position: 17% 0%;
+  }
+  75% {
+    background-position: 100% 84%;
+  }
+  100% {
+    background-position: 0% 17%;
+  }
 }
 
 /* about is board wit information about spice solutins 
@@ -114,6 +175,7 @@ a {
   width: 100%;
   height: 100%;
 }
+/* hamburger nav*/
 .hamburger {
   position: fixed;
   right: 0;
@@ -154,19 +216,20 @@ a {
 
 /* this is clock main page css section */
 .opening {
-  margin: 10px auto;
-  width: 800px;
-  height: 800px;
+  margin: 0px auto;
+  width: 100wh;
+  height: 100wh;
 }
 @media screen and (max-width: 400px) {
   .opening {
     padding: 0px auto;
   }
 }
+
 div.clock {
   /* text-align: center; */
   position: relative;
-  top: 0;
+  top:0;
   left: 0;
 }
 
@@ -175,9 +238,10 @@ div.clock {
   top: 0;
   left: 0;
   /* width: 1px; */
-  max-width: 100%;
   height: auto;
   pointer-events: none;
+  margin: 0px auto;
+  width: 800px;
 }
 
 img.clock {
@@ -186,9 +250,9 @@ img.clock {
   left: 0;
   transform: rotate(-45deg);
   /* width: 1px; */
-  max-width: 100%;
-  height: auto;
+  /* height: auto; */
   animation: rotate 6s ease;
+  width: 800px;
 }
 /* END of pause clock rotating animation */
 @keyframes rotate {
@@ -218,6 +282,16 @@ img.clock {
 /* product section */
 .bow {
   max-height: 420px;
+}
+@media screen and (max-width: 900px) {
+  .bow {
+    max-height: 320px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bow {
+    max-height: 220px;
+  }
 }
 @media screen and (max-width: 400px) {
   .bow {
@@ -313,6 +387,15 @@ img.carousel__photo{
   max-height: 350px !important;;
   overflow-y: scroll ;
 }
+/* ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(255, 221, 72, 0.5);
+  -webkit-box-shadow: 0 0 1px rgb(165, 165, 165);
+} */
 
 .mobile {
   display: none;
@@ -465,4 +548,7 @@ footer {
 .social_ico:hover {
   max-width: 43px;
   padding: 0;
+}
+#home{
+  margin:0px;
 }

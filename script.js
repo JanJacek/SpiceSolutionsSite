@@ -311,27 +311,27 @@ closeLogoES.addEventListener('click', function(){
 })
 
 // make clock responsive the clock section ------->
-window.onload = function(){
-  console.log($(window).width());
-  console.log( i );
-  if($(window).width()-10 < 900){
-    i=$(window).width()-10;
-  }
-  $('#apDiv1').css("width", `${i}px`);
-  $('#apDiv2').css("width", `${i}px`);
-  $('#apDiv3').css("width", `${i}px`);
-}
+// window.onload = function(){
+//   console.log($(window).width());
+//   console.log( i );
+//   if($(window).width()-10 < 900){
+//     i=$(window).width()-10;
+//   }
+//   $('#apDiv1').css("width", `${i}px`);
+//   $('#apDiv2').css("width", `${i}px`);
+//   $('#apDiv3').css("width", `${i}px`);
+// }
 
-window.onresize = function(){
-  if($(window).width()-10 < 900){
-    i=$(window).width()-10;
-  }
-  console.log($(window).width());
-  console.log( i );
-  $('#apDiv1').css("width", `${i}px`);
-  $('#apDiv2').css("width", `${i}px`);
-  $('#apDiv3').css("width", `${i}px`);
-}
+// window.onresize = function(){
+//   if($(window).width()-10 < 900){
+//     i=$(window).width()-10;
+//   }
+//   console.log($(window).width());
+//   console.log( i );
+//   $('#apDiv1').css("width", `${i}px`);
+//   $('#apDiv2').css("width", `${i}px`);
+//   $('#apDiv3').css("width", `${i}px`);
+// // }
 
 //this is clock buttons service ------------>
 areaA.addEventListener("mouseover", funca);
@@ -421,6 +421,13 @@ hamburger.on({
 // this is ratatin arrow section ------->
 var offset = img.offset();
 function mouse(evt){
+  let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"),$("#eG").hasClass("hide"), $("#eS").hasClass("hide")]
+  
+  if(hideOrNo.includes(false)){
+    console.log("Stop arrow");
+  }else{
+  // var center_x = (offset.left) + (img.width()/2);
+  // var center_y = (offset.top) + (img.height()/2);
   var center_x = (offset.left) + (img.width()/2);
   var center_y = (offset.top) + (img.height()/2);
   var mouse_x = evt.pageX; var mouse_y = evt.pageY;
@@ -430,6 +437,7 @@ function mouse(evt){
   img.css('-webkit-transform', 'rotate('+degree+'deg)');
   img.css('-o-transform', 'rotate('+degree+'deg)');
   img.css('-ms-transform', 'rotate('+degree+'deg)');
+  }
 }
 $(document).mousemove(mouse);
 
