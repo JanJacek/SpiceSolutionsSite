@@ -64,8 +64,7 @@ areaA.addEventListener('click', function(){
     //       slidesToScroll: 1
     //     }
     //   }
-    // ]
-    
+    // ]   
   });
 })
 
@@ -79,15 +78,15 @@ areaB.addEventListener('click', function(){
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
-    responsive: [
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]  
+    // responsive: [
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]  
   });
 })
 areaC.addEventListener('click', function(){
@@ -100,16 +99,16 @@ areaC.addEventListener('click', function(){
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
-    responsive: [
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-    });
+    // responsive: [
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
+  });
 })
 areaD.addEventListener('click', function(){
   // alert("sekcja eSaffon jest jeszcze w budowie");
@@ -121,15 +120,15 @@ areaD.addEventListener('click', function(){
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
-    responsive: [
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ] 
+    // responsive: [
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ] 
   });
 })
 
@@ -165,12 +164,11 @@ lmec.addEventListener('click', function(){
 
 lmew.addEventListener('click', function(){
   console.log('zamknij ec');
-  //console.log(document.querySelector(".productEC"));
   document.querySelector(".productEC").classList.add("hide");
-  //console.log(document.querySelector(".productEC"));
-
   document.querySelector(".productEC").classList.remove("about");
+
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
+
   document.querySelector(".intro").classList.add("hide");
   document.querySelector(".intro").classList.remove("about");
 
@@ -286,27 +284,72 @@ lmek.addEventListener('mouseleave', function(){
 
 //closeing product article with logo section
 
+// closeLogoEC.addEventListener('click', function(){
+//   console.log('zamknij ec');
+//   document.querySelector(".productEC").classList.add("aboutt");
+//   setTimeout(function() { 
+//     document.querySelector(".productEC").classList.remove("aboutt");
+//     document.querySelector(".productEC").classList.add("hide")
+// }, 2000);
+//   // document.querySelector(".productEC").classList.add("hide");
+//   document.querySelector(".productEC").classList.remove("about");
+// })
+
+
+
 closeLogoEC.addEventListener('click', function(){
+  // console.log('zamknij ec');
+  // document.querySelector(".productEC").classList.add("hide");
+  // document.querySelector(".productEC").classList.remove("about");
   console.log('zamknij ec');
-  //console.log(document.querySelector(".productEC"));
-  document.querySelector(".productEC").classList.add("hide");
-  //console.log(document.querySelector(".productEC"));
+  document.querySelector(".productEC").classList.add("aboutt");
+  setTimeout(function() { 
+    document.querySelector(".productEC").classList.remove("aboutt");
+    document.querySelector(".productEC").classList.add("hide")
+}, 2000);
+  // document.querySelector(".productEC").classList.add("hide");
   document.querySelector(".productEC").classList.remove("about");
 })
-
+//------------------------------------------------------
 closeLogoEW.addEventListener('click', function(){
+  // console.log('zamknij ew');
+  // document.querySelector(".productEW").classList.add("hide");
+  // document.querySelector(".productEW").classList.remove("about");
   console.log('zamknij ew');
-  document.querySelector(".productEW").classList.add("hide");
+  document.querySelector(".productEW").classList.add("aboutt");
+  setTimeout(function() { 
+    document.querySelector(".productEW").classList.remove("aboutt");
+    document.querySelector(".productEW").classList.add("hide")
+}, 2000);
+  // document.querySelector(".productEC").classList.add("hide");
   document.querySelector(".productEW").classList.remove("about");
 })
+
 closeLogoEG.addEventListener('click', function(){
+  // console.log('zamknij eg');
+  // document.querySelector(".productEG").classList.add("hide");
+  // document.querySelector(".productEG").classList.remove("about");
   console.log('zamknij eg');
-  document.querySelector(".productEG").classList.add("hide");
+  document.querySelector(".productEG").classList.add("aboutt");
+  setTimeout(function() { 
+    document.querySelector(".productEG").classList.remove("aboutt");
+    document.querySelector(".productEG").classList.add("hide")
+}, 2000);
+  // document.querySelector(".productEC").classList.add("hide");
   document.querySelector(".productEG").classList.remove("about");
 })
+
 closeLogoES.addEventListener('click', function(){
+  // console.log('zamknij es');
+  // document.querySelector(".productES").classList.add("hide");
+  // document.querySelector(".productES").classList.remove("about");
   console.log('zamknij es');
-  document.querySelector(".productES").classList.add("hide");
+  document.querySelector(".productES").classList.add("aboutt");
+  setTimeout(function() { 
+    document.querySelector(".productES").classList.remove("aboutt");
+    document.querySelector(".productES").classList.add("hide")
+}, 2000);
+  // document.querySelector(".productEC").classList.add("hide");
   document.querySelector(".productES").classList.remove("about");
 })
 

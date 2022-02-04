@@ -114,6 +114,29 @@ fade in when pointer is on the center of the clock */
     width: 100%;
   }
 }
+.aboutt {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  animation-duration: 2s;
+  animation-name: slideinn;
+  animation-direction: alternate;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-left: 100%;
+  width: 300%;
+}
+@keyframes slideinn {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
 
 /* this is only for test */
 @media screen and (max-width: 400px) {
@@ -495,7 +518,7 @@ img.carousel__photo {
 /* Carousele arrow basic */
 .slide-arrow {
   position: absolute;
-  top: 50%;
+  top: 10%;
   margin-top: -15px;
 }
 .prev-arrow {
