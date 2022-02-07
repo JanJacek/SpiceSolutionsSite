@@ -1,5 +1,4 @@
 $(function(){
-var img = $(".clockArrow");
 let stoper = document.querySelector("img.clock");
 let areaA = document.querySelector(".areaA");
 let areaB = document.querySelector(".areaB");
@@ -476,29 +475,6 @@ hamburger.on({
 // });
 
 
-// this is ratatin arrow section ------->
-var offset = img.offset();
-function mouse(evt){
-  let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"), $("#eG").hasClass("hide"), $("#eS").hasClass("hide"), $("#Ses").hasClass("hide")]
-  
-  if(hideOrNo.includes(false)){
-    console.log("Stop arrow");
-  }else{
-  // var center_x = (offset.left) + (img.width()/2);
-  // var center_y = (offset.top) + (img.height()/2);
-  var center_x = (offset.left) + (img.width()/2);
-  var center_y = (offset.top) + (img.height()/2);
-  var mouse_x = evt.pageX; var mouse_y = evt.pageY;
-  var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
-  var degree = (radians * (180 / Math.PI) * -1) + 180; 
-  img.css('-moz-transform', 'rotate('+degree+'deg)');
-  img.css('-webkit-transform', 'rotate('+degree+'deg)');
-  img.css('-o-transform', 'rotate('+degree+'deg)');
-  img.css('-ms-transform', 'rotate('+degree+'deg)');
-  }
-}
-$(document).mousemove(mouse);
-
         /*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
  *  Desc: Resize HTML imageMap to scaled image.
  *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
@@ -570,4 +546,43 @@ $(document).mousemove(mouse);
   }();
   //# sourceMappingURL=imageMapResizer.map
   $('map').imageMapResize();
+
+
+  // this is ratatin arrow section ------->
+let img = $(".clockArrow");
+let offset = img.offset();
+
+$( document ).ready(function() {
+  console.log( "ready!" );
+  offset = img.offset();
+});
+
+$(window).resize(function()
+  {offset = img.offset();}
+)
+
+
+//console.log(offset);
+
+function mouse(evt){
+//  img = $(".clockArrow");
+//  offset = img.offset();
+ console.log(offset);
+  let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"), $("#eG").hasClass("hide"), $("#eS").hasClass("hide"), $("#Ses").hasClass("hide")]
+  
+  if(hideOrNo.includes(false)){
+    console.log("Stop arrow");
+  }else{
+  var center_x = (offset.left) + (img.width()/2);
+  var center_y = (offset.top) + (img.height()/2);
+  var mouse_x = evt.pageX; var mouse_y = evt.pageY;
+  var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
+  var degree = (radians * (180 / Math.PI) * -1) + 180; 
+  img.css('-moz-transform', 'rotate('+degree+'deg)');
+  img.css('-webkit-transform', 'rotate('+degree+'deg)');
+  img.css('-o-transform', 'rotate('+degree+'deg)');
+  img.css('-ms-transform', 'rotate('+degree+'deg)');
+  }
+}
+$(document).mousemove(mouse);
 })

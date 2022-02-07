@@ -101,7 +101,7 @@ fade in when pointer is on the center of the clock */
   animation-name: slidein;
   animation-direction: alternate;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.897);
 }
 @keyframes slidein {
   from {
@@ -302,10 +302,10 @@ img.clock {
 } */
 
 /* product section */
-.bow {
+/* .bow {
   max-height: 420px;
-}
-@media screen and (max-width: 900px) {
+} */
+/* @media screen and (max-width: 900px) {
   .bow {
     max-height: 320px;
   }
@@ -319,23 +319,23 @@ img.clock {
   .bow {
     max-height: 120px;
   }
-}
+} */
 /* =============== */
 /*   eC  section   */
-.eC {
-  margin-top: 40px;
-  width: 100%;
-  display: flex;
+  /* {
+  padding: 10px auto;
+  width: 100%; */
+  /* display: block; */
+  /* display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-}
+  align-items: flex-start; */
 
 .eW {
   margin-top: 40px;
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 #eW {
   padding-top: 60px;
@@ -343,9 +343,9 @@ img.clock {
 
 .eG {
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 #eG {
   padding-top: 60px;
@@ -354,9 +354,9 @@ img.clock {
 .eS {
   margin-top: 40px;
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: flex-start; */
 }
 
 /*  Carousel section */
@@ -392,8 +392,12 @@ img.clock {
 .sliderES {
   margin: -100px auto;
 } */
+/* .cleseingLogoEC{
+ max-width: 50%;
+ margin-left: 130px;
+} */
 .carousel__wrapper {
-  margin: -100px 28%;
+  margin: 100px 10%;
 }
 .carousel {
   margin: 0 auto;
@@ -403,12 +407,17 @@ img.clock {
 }
 img.carousel__photo {
   width: 100%;
-  height: auto;
+  max-width: 90vh;
+  margin: 0px auto;
+  padding-bottom: 100px;
 }
 .carousel__text {
-  max-height: 350px !important;
+  text-align: center;
+  /* max-height: 350px !important; */
+  /* max-width: 90vh; */
   overflow-y: scroll;
 }
+
 /* ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 8px;
@@ -503,11 +512,11 @@ img.carousel__photo {
 /* Carousele arrow basic */
 .slide-arrow {
   position: absolute;
-  top: 10%;
+  top: 40%;
   margin-top: -15px;
 }
 .prev-arrow {
-  left: -50px;
+  left: -20px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -516,7 +525,7 @@ img.carousel__photo {
   background-color: rgba(0, 0, 0, 0);
 }
 .next-arrow {
-  right: -50px;
+  right: -20px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
