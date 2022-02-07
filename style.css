@@ -27,7 +27,7 @@ body {
   z-index: -1;
   background: linear-gradient(
     320deg,
-    #000000c2,
+    #000000af,
     #00000094,
     #0000006b,
     #00000038
@@ -256,40 +256,25 @@ a {
 }
 
 div.clock {
-  /* text-align: center; */
   position: relative;
-  /* top:0;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%;
-  height: 100%; */
-}
-
-.clockArrow {
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  /* width: 1px; */
-  /* height: auto; */
-  pointer-events: none;
-  /* margin: 0px auto; */
-  /* width: 800px; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 img.clock {
   position: relative;
-  /* top: 0;
-  left: 0; */
   transform: rotate(-45deg);
-  /* width: 1px; */
-  /* height: auto; */
   animation: rotate 6s ease;
-  /* width: 800px; */
+  max-height: 100vw;
+  max-width: 100vh;
+}
+
+.clockArrow {
+  position: absolute;
+  pointer-events: none;
+  max-height: 100vw;
+  max-width: 100vh;
 }
 /* END of pause clock rotating animation */
 @keyframes rotate {

@@ -27,7 +27,8 @@ let lmes = document.querySelector(".menu-item-es")
 let lmek = document.querySelector(".menu-item-k")
 
 
-// this is click on stopr center section 
+// this is click on stopr center section
+
 areaE.addEventListener('mouseover', function(){
   document.querySelector(".clockArrow").src = "./assets/arrowboldgreen.png";
 })
@@ -40,8 +41,19 @@ areaE.addEventListener('mouseleave', function(){
 })
 spcesol.addEventListener('click', function(){
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
-  document.querySelector(".intro").classList.add("hide");
+  //document.querySelector(".intro").classList.add("hide");
   document.querySelector(".intro").classList.remove("about");
+
+  console.log('zamknij ec');
+  document.querySelector(".intro").classList.add("aboutt");
+  setTimeout(function() { 
+    document.querySelector(".intro").classList.remove("aboutt");
+    document.querySelector(".intro").classList.add("hide")
+  }, 2000);
+  
+//   // document.querySelector(".productEC").classList.add("hide");
+//   document.querySelector(".intro").classList.remove("about");
+// })
 })
 
  // this is click on one of four buttons section \\
@@ -89,6 +101,7 @@ areaB.addEventListener('click', function(){
     // ]  
   });
 })
+
 areaC.addEventListener('click', function(){
   // alert("sekcja eGinger jest jeszcze w budowie");
   document.querySelector(".productEG").classList.remove("hide");
@@ -110,6 +123,7 @@ areaC.addEventListener('click', function(){
     // ]
   });
 })
+
 areaD.addEventListener('click', function(){
   // alert("sekcja eSaffon jest jeszcze w budowie");
   document.querySelector(".productES").classList.remove("hide");
@@ -191,6 +205,7 @@ lmew.addEventListener('click', function(){
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
 })
+
 lmeg.addEventListener('click', function(){
   console.log('zamknij ec');
   //console.log(document.querySelector(".productEC"));
@@ -221,6 +236,7 @@ lmeg.addEventListener('click', function(){
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
 })
+
 lmes.addEventListener('click', function(){
 
   console.log('zamknij ec');
@@ -251,6 +267,7 @@ lmes.addEventListener('click', function(){
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
 })
+
 lmek.addEventListener('mouseover', function(){
   document.querySelector(".clockArrow").src = "./assets/arrowboldgreen.png";
 })
@@ -277,10 +294,10 @@ lmek.addEventListener('click', function(){
   document.querySelector(".intro").classList.remove("hide");
   document.querySelector(".intro").classList.add("about");
 })
+
 lmek.addEventListener('mouseleave', function(){
   document.querySelector(".clockArrow").src = "./assets/stoper-01-arrow.png";
 })
-
 
 //closeing product article with logo section
 
@@ -294,8 +311,6 @@ lmek.addEventListener('mouseleave', function(){
 //   // document.querySelector(".productEC").classList.add("hide");
 //   document.querySelector(".productEC").classList.remove("about");
 // })
-
-
 
 closeLogoEC.addEventListener('click', function(){
   // console.log('zamknij ec');
@@ -464,7 +479,7 @@ hamburger.on({
 // this is ratatin arrow section ------->
 var offset = img.offset();
 function mouse(evt){
-  let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"),$("#eG").hasClass("hide"), $("#eS").hasClass("hide")]
+  let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"), $("#eG").hasClass("hide"), $("#eS").hasClass("hide"), $("#Ses").hasClass("hide")]
   
   if(hideOrNo.includes(false)){
     console.log("Stop arrow");
