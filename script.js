@@ -141,7 +141,7 @@ if($( window ).width() < 600){
     setTimeout(function() { 
       document.querySelector(".intro").classList.remove("aboutt");
       document.querySelector(".intro").classList.add("hide");
-    }, 2000);
+    }, 1001);
   })
 
   // this is click on one of four buttons section \\
@@ -349,7 +349,7 @@ if($( window ).width() < 600){
     setTimeout(function() { 
       document.querySelector(".productEC").classList.remove("aboutt");
       document.querySelector(".productEC").classList.add("hide")
-    }, 2000);
+    }, 1001);
     document.querySelector(".productEC").classList.remove("about");
   })
 
@@ -359,7 +359,7 @@ if($( window ).width() < 600){
     setTimeout(function() { 
       document.querySelector(".productEW").classList.remove("aboutt");
       document.querySelector(".productEW").classList.add("hide")
-    }, 2000);
+    }, 1001);
     document.querySelector(".productEW").classList.remove("about");
   })
 
@@ -369,7 +369,7 @@ if($( window ).width() < 600){
     setTimeout(function() { 
       document.querySelector(".productEG").classList.remove("aboutt");
       document.querySelector(".productEG").classList.add("hide")
-    }, 2000);
+    }, 1001);
     document.querySelector(".productEG").classList.remove("about");
   })
 
@@ -379,7 +379,7 @@ if($( window ).width() < 600){
     setTimeout(function() { 
       document.querySelector(".productES").classList.remove("aboutt");
       document.querySelector(".productES").classList.add("hide")
-    }, 2000);
+    }, 1001);
     document.querySelector(".productES").classList.remove("about");
   })
 
