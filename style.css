@@ -279,6 +279,7 @@ img.clock {
 
 div.clock {
   position: relative;
+  top: 3vh;
   left: 0;
   width: 98vh;
   /* height: 80vh; */
@@ -286,7 +287,7 @@ div.clock {
 }
 @media screen and (max-width: 600px) {
   div.clock {
-    top: 10vh;
+    top: 8vh;
   }
 }
 .clockArrow {
@@ -399,7 +400,8 @@ footer {
   display: block;
 }
 .ecx {
-  max-width: 2vw;
+  margin-top: 30px;
+  max-width: 3vw;
   padding: 1vw 15vw 0vw;
 }
 .productLogo {
@@ -430,6 +432,9 @@ footer {
   color: rgb(241, 241, 241);
 }
 
+.fadeGradient {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .product {
     padding-top: 30px;
@@ -439,6 +444,21 @@ footer {
   }
   ::-webkit-scrollbar {
     width: 2px;
+  }
+  .fadeGradient {
+    display: unset;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.774) 5%,
+      rgba(0, 0, 0, 0) 20%
+    );
+    pointer-events: none;
   }
 }
 ::-webkit-scrollbar {
