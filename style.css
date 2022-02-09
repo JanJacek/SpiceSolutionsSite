@@ -279,13 +279,16 @@ img.clock {
 
 div.clock {
   position: relative;
-  top: 0;
   left: 0;
   width: 98vh;
   /* height: 80vh; */
   margin: 0px auto;
 }
-
+@media screen and (max-width: 600px) {
+  div.clock {
+    top: 10vh;
+  }
+}
 .clockArrow {
   position: absolute;
   top: 0;
@@ -419,6 +422,7 @@ footer {
   max-height: 300px;
   padding: 0vw 5vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .whiteTin {
   font-family: Jost;
@@ -429,6 +433,12 @@ footer {
 @media screen and (max-width: 600px) {
   .product {
     padding-top: 30px;
+  }
+  .whiteTin {
+    font-size: 14px;
+  }
+  ::-webkit-scrollbar {
+    width: 2px;
   }
 }
 ::-webkit-scrollbar {
