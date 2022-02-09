@@ -26,6 +26,98 @@ $(function(){
   let lmes = document.querySelector(".menu-item-es");
   let lmek = document.querySelector(".menu-item-k");
 
+
+// append div with img on mobile test =============
+// eCurcuma pictures
+let ecHardtop = [
+  '<img class="hardTop carousel__element" src="./assets/slsec1.png"/>',
+  '<img class="hardTop carousel__element" src="./assets/slsec2.png"/>'
+]
+let ecMobileImgs = [
+  '<img class="mobile" src="./assets/SpiceSscreens_eC4-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC5-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC6-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC7-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC8-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC3-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC2-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eC1-01.png"/>'
+]
+
+// eWasabi pictures
+let ewHardtop = [
+  '<img class="hardTop carousel__element" src="./assets/slsew1.png"/>',
+  '<img class="hardTop carousel__element" src="./assets/slsew2.png"/>'
+]
+let ewMobileImgs = [
+  '<img class="mobile" src="./assets/SpiceSscreens_eW3-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW4-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW5-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW6-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW7-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW2-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eW1-01.png">'
+]
+
+// eGinger pictures
+let egHardtop = [
+  '<img class="hardTop carousel__element" src="./assets/slseg1.png"/>',
+  '<img class="hardTop carousel__element" src="./assets/slseg2.png"/>'
+]
+let egMobileImgs = [
+  '<img class="mobile" src="./assets/SpiceSscreens_eG5-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG6-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG7-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG8-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG4-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG3-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG2-01.png">',
+  '<img class="mobile" src="./assets/SpiceSscreens_eG1-01.png">'
+]
+
+// eSaffton pictures
+let esHardtop = [
+  '<img class="hardTop carousel__element" src="./assets/slses1.png"/>',
+  '<img class="hardTop carousel__element" src="./assets/slses2.png"/>'
+]
+let esMobileImgs = [
+  '<img class="mobile" src="./assets/SpiceSscreens_eS8-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS4-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS5-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS6-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS7-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS3-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS2-01.png"/>',
+  '<img class="mobile" src="./assets/SpiceSscreens_eS1-01.png"/>'
+]
+
+if($( window ).width() < 600){
+  console.log($( window ).width());
+
+  for (let i = 0; i < esMobileImgs.length; i++) {
+    console.log(esMobileImgs[i]);
+    $('.carouselc').append(ecMobileImgs[i])
+    $('.carouselw').append(ewMobileImgs[i])
+    $('.carouselg').append(egMobileImgs[i])
+    $('.carousels').append(esMobileImgs[i])
+  }
+}else{
+    for (let j = 0; j < esMobileImgs.length; j++) {
+      console.log(esMobileImgs[j]);
+      $('.carouselc').append(ecHardtop[j])
+      $('.carouselw').append(ewHardtop[j])
+      $('.carouselg').append(egHardtop[j])
+      $('.carousels').append(esHardtop[j])
+    }
+}
+
+  // for ( let i = 0; esMobileImgs.length < i ; i++ ){
+  //  console.log(esMobileImgs);
+  
+  // $('.carousels').prepend(esMobileImgs.[i])
+// $('.carousels').prepend( esMobileImgs[i] )
+// test end =======================================
+
   // this is click on stopr center section
 
   areaE.addEventListener('mouseover', function(){
@@ -372,19 +464,19 @@ $(function(){
   let offset = img.offset();
   console.log(offset);
 
-  $(window).resize(function() {
-    console.log('wymieram strzałkę na nowo'); 
-    img = $(".clockArrow");
-    offset = img.offset();
-    console.log(offset);
-  })
+  // $(window).resize(function() {
+  //   console.log('wymieram strzałkę na nowo'); 
+  //   img = $(".clockArrow");
+  //   offset = img.offset();
+  //   console.log(offset);
+  // })
 
+ //$(window).resize(function() { img = $(".clockArrow"); offset = img.offset();})
+  if(img.length > 0){
+  setTimeout(function (){$(window).resize(function() { img = $(".clockArrow"); offset = img.offset();})},10)
   function mouse(evt){
-
     let hideOrNo =[$("#eC").hasClass("hide"), $("#eW").hasClass("hide"), $("#eG").hasClass("hide"), $("#eS").hasClass("hide"), $("#Ses").hasClass("hide")]
-    
     if(hideOrNo.includes(false)){
-      // console.log("Stop arrow");
     }else{
     var center_x = (offset.left) + (img.width()/2);
     var center_y = (offset.top) + (img.height()/2);
@@ -397,6 +489,7 @@ $(function(){
     img.css('-o-transform', 'rotate('+degree+'deg)');
     img.css('-ms-transform', 'rotate('+degree+'deg)');
     }
+  }
   }
   $(document).mousemove(mouse);
 
