@@ -393,32 +393,41 @@ footer {
 #home {
   margin: 0px;
 }
-
+@media screen and (max-width: 600px) {
+  .intro {
+    padding: 12px;
+  }
+  .main__logo {
+    max-width: 200px;
+  }
+}
 /* post carousel */
 /* general */
+.sesx {
+  margin-top: 30px;
+}
 .product__pictures {
   display: block;
 }
 .ecx {
   margin-top: 30px;
-  max-width: 3vw;
+  max-width: 2vw;
   padding: 1vw 15vw 0vw;
 }
+
 .productLogo {
-  max-width: 50vw;
+  max-height: 10vw;
   margin: 0 auto;
   padding: 0vw 15vw;
 }
-
 .carousel {
   max-width: 50vw;
   /* width: 100%; */
   margin: 3vw auto;
 }
 .carousel__element {
-  max-height: 400px;
-  max-width: 100%;
-  margin: 0 auto;
+  max-height: 500px;
+  margin: 0px auto;
 }
 .text__carousel {
   max-height: 300px;
@@ -431,9 +440,40 @@ footer {
   font-weight: 200;
   color: rgb(241, 241, 241);
 }
+@media screen and (max-width: 1424px) {
+  .sesx {
+    margin-top: 30px;
+    padding: 1vw 0vw 0vw;
+  }
+  .productLogo {
+    max-width: 50vw;
+    margin: 0 auto;
+    padding: 0vw 15vw;
+  }
+  .carousel {
+    max-width: 50vw;
+    /* width: 100%; */
+    margin: 3vw auto;
+  }
+  .carousel__element {
+    max-height: 50vw;
+    margin: 0px auto;
+  }
+  .text__carousel {
+    max-height: 300px;
+    padding: 0vw 5vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .whiteTin {
+    font-family: Jost;
+    font-weight: 200;
+    color: rgb(241, 241, 241);
+  }
 
-.fadeGradient {
-  display: none;
+  .fadeGradient {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .product {

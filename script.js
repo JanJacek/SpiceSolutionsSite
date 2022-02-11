@@ -10,7 +10,7 @@ $(function(){
   let closeLogoEW = document.querySelector(".cleseingLogoEW");
   let closeLogoEG = document.querySelector(".cleseingLogoEG");
   let closeLogoES = document.querySelector(".cleseingLogoES");
-  let spcesol = document.querySelector('h1')
+  let spcesol = document.querySelector('.sesx')
   let i = 899;
 
   let menu = $(".menu");
