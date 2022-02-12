@@ -11,7 +11,7 @@ $(function(){
   let closeLogoEG = document.querySelector(".cleseingLogoEG");
   let closeLogoES = document.querySelector(".cleseingLogoES");
   let spcesol = document.querySelector('.sesx')
-  let i = 899;
+  // let i = 899;
 
   let menu = $(".menu");
   let hamburger = $(".hamburger");
@@ -26,8 +26,11 @@ $(function(){
   let lmes = document.querySelector(".menu-item-es");
   let lmek = document.querySelector(".menu-item-k");
 
+// testing API
+// import {seslang} from "./getlang"
+// console.log(seslang);
 
-// append div with img on mobile test =============
+// jj. carousels get different images for mobile and hardtop
 // eCurcuma pictures
 let ecHardtop = [
   '<img class="hardTop carousel__element" src="./assets/slsec1.png"/>',
