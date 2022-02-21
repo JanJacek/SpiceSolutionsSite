@@ -11,23 +11,56 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log("error !!!");
         console.log(e);
     }
-    console.log(data);
+    console.log("objekt json: ", data);
 
     // language changer support
     const langEl = document.querySelector('.langWrap');
     const link = document.querySelectorAll('a');
-    const titleEl = document.querySelector('.title');
-    const descrEl = document.querySelector('.description');
-
+    const titleSes = document.querySelector('.titleSes');
+    const descrSes = document.querySelector('.descriptionSes');
+    //ec
+    const titleEc = document.querySelector('.titleEc');
+    const descrEc = document.querySelector('.descriptionEc');
+    //ew
+    const titleEw = document.querySelector('.titleEw');
+    const descrEw = document.querySelector('.descriptionEw');
+    //eg
+    const titleEg = document.querySelector('.titleEg');
+    const descrEg = document.querySelector('.descriptionEg');
+    //es
+    const titleEs = document.querySelector('.titleEs');
+    const descrEs = document.querySelector('.descriptionEs');
+    
     link.forEach(el => {
         el.addEventListener('click', () => {
             langEl.querySelector('.active').classList.remove('active');
             el.classList.add('active');
-
+            
             const attr = el.getAttribute('language');
             const ses = 'ses'
-            titleEl.textContent = data[ses][attr].title;
-            descrEl.textContent = data[ses][attr].description;
+            const ec = 'ec'
+            const ew = 'ew'
+            const eg = 'eg'
+            const es = 'es'
+
+            console.log("tu ma być tytuł po japońsku",data["lang"]['ses']['japanese']);
+            console.log("tu ma być tytuł po japońsku",data["lang"][ses][attr]);
+            console.log("tu ma być tytuł po angielsku",data["lang"][ec][attr]);
+            //Spicesolution translation
+            titleSes.textContent = data["lang"][ses][attr].title;
+            descrSes.textContent = data["lang"][ses][attr].description;
+            //eCurucuma translation
+            titleEc.textContent = data["lang"][ec][attr].title;
+            descrEc.textContent = data["lang"][ec][attr].description;
+            //eWasabi translation
+            titleEw.textContent = data["lang"][ew][attr].title;
+            descrEw.textContent = data["lang"][ew][attr].description;
+            //eGinger translation
+            titleEg.textContent = data["lang"][eg][attr].title;
+            descrEg.textContent = data["lang"][eg][attr].description;
+            //eSaffron translation
+            titleEs.textContent = data["lang"][es][attr].title;
+            descrEs.textContent = data["lang"][es][attr].description;
         });
     });
 })
