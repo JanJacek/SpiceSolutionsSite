@@ -2,70 +2,90 @@
 	"lang":{
 		"ses":{
 			"english":{
-				"title": "Hello World",
-				"description":	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+				"title": "Meet SpiceSolutions that give a chance to take informed and firm decisions",
+				"description":	"e-Tools for taking informed and firm decisions for your business"
 			},
 			"polish":{
 				"title": "Cześć",
 				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
 			},
-			"japanese":{
+			"german":{
+				"title": "ハロー・ワールド",
+				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
+			},
+			"spanish":{
 				"title": "ハロー・ワールド",
 				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 			}
 		},
 		"ec":{
 			"english":{
-				"title": "Hello World",
-				"description":	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+				"title": "An electronic document flow system – orders, invoices, contracts, and mailing is an important addition to your firm.",
+				"description":	"The system supports information flow and cost control in an organization"
 			},
 			"polish":{
 				"title": "Cześć",
 				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
 			},
-			"japanese":{
+			"german":{
+				"title": "Elektronisches Dokumentenzirkulationssystem - Bestellungen, Rechnungen, Verträge, Korrespondenz ist eine wichtige Ergänzung für Ihre Firma",
+				"description": "Das System unterstützt den Informationsfluss innerhalb der Organisation und die Kontrolle der Ausgaben"
+			},
+			"spanish":{
 				"title": "ハロー・ワールド",
 				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 			}
 		},
 		"ew":{
 			"english":{
-				"title": "Hello World",
-				"description":	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+				"title": "Project management system",
+				"description":	"presents an implementation status and time for performing a task reports efficiency of actions and management It is a spicy seasoning; once you try it, work will never taste the same"
 			},
 			"polish":{
 				"title": "Cześć",
 				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
 			},
-			"japanese":{
+			"german":{
+				"title": "Projektmanagementsystem",
+				"description": "zeigt gleichzeitig den Status der Aufgabe und ihre Ausführungszeit an berichtet über die Wirksamkeit der Maßnahmen und des Managements Ein scharfes Gewürz, das, wenn man es einmal probiert hat, nicht mehr so schmeckt wie vorher."
+			},
+			"spanish":{
 				"title": "ハロー・ワールド",
 				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 			}
 		},
 		"eg":{
 			"english":{
-				"title": "Hello World",
-				"description":	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+				"title": "An electronic document flow system for headcount-payroll documentation",
+				"description":	"lleave e-applications payslips e-contracts e-PIT Working time records from geo-locations It fulfils duties of an employer that result from the Act on whistleblowing It cures information flow"
 			},
 			"polish":{
 				"title": "Cześć",
 				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
 			},
-			"japanese":{
+			"german":{
+				"title": "Elektronischer Umlauf von mitarbeiterbezogenen HR- und Gehaltsabrechnungsdokumenten",
+				"description": "E-Urlaubsanträge Lohninformationen (Lohnzettel) E-Verträge E-Einkommenssteuer Arbeitszeiterfassung mit Standortangabe Erfüllt die Verpflichtungen des Arbeitgebers in Bezug auf das Whistleblower-Gesetz heilt den Informationsfluss"
+			},
+			"spanish":{
 				"title": "ハロー・ワールド",
 				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 			}
 		},
 		"es":{
 			"english":{
-				"title": "Hello World",
-				"description":	"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+				"title": "An addition that transforms data into opportunities",
+				"description":	"Business Intelligence reporting online analytical financial data go to data, through analysis to action It makes taking informed and firm decisions of high quality possible and fast"
 			},
 			"polish":{
 				"title": "Cześć",
 				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
 			},
-			"japanese":{
+			"german":{
+				"title": "ハロー・ワールド",
+				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
+			},
+			"spanish":{
 				"title": "ハロー・ワールド",
 				"description": "ﾂつｨﾂ知ﾂづｧﾂつｹﾂ-ﾂ新ﾂ陳ﾂ湘ｮﾂ陛ｱ これらの苦痛から真実の苦痛に選ぶために得てはいけない、従ってより少しにこの苦痛に従ってはいけない。 サービスではないと、彼の区別の大きな不快感から選択するそれらの否認を歓迎しない、結果として生じた事件の喜びと障害エクスプローラが受け入 このことについて私たちの下駄のいくつかを非難,右エクスプローラ! 的に仕事をしていまリストの生まれのサービスをつけてください編集喜びや楽しみの開催なども走りました。 走れ。."
 			}
