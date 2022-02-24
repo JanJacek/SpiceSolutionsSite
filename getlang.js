@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     //es
     const titleEs = document.querySelector('.titleEs');
     const descrEs = document.querySelector('.descriptionEs');
+
+    const contactSes = document.querySelector('.contactSes');
     
     link.forEach(el => {
         el.addEventListener('click', () => {
@@ -42,10 +44,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             const ew = 'ew'
             const eg = 'eg'
             const es = 'es'
-
-            console.log("tu ma być tytuł po japońsku",data["lang"]['ses']['japanese']);
-            console.log("tu ma być tytuł po japońsku",data["lang"][ses][attr]);
-            console.log("tu ma być tytuł po angielsku",data["lang"][ec][attr]);
+            //Spicesolution contact translation
+            console.log(contactSes.textContent= data["lang"][ses][attr].contact);
+            //contactSes.innerHTML = data["lang"][ses][attr].contact
+            contactSes.textContent= data["lang"][ses][attr].contact
             //Spicesolution translation
             titleSes.textContent = data["lang"][ses][attr].title;
             descrSes.textContent = data["lang"][ses][attr].description;

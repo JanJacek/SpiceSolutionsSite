@@ -3,19 +3,23 @@
 		"ses":{
 			"english":{
 				"title": "Meet SpiceSolutions that give a chance to take informed and firm decisions",
-				"description":	"e-Tools for taking informed and firm decisions for your business"
+				"description":	"e-Tools for taking informed and firm decisions for your business",
+				"contact": "Contact"
 			},
 			"polish":{
 				"title": "Cześć",
-				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
+				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ...",
+				"contact": "Kontakt"
 			},
 			"german":{
 				"title": "Lernen Sie SpiceSolutions kennen, damit Sie fundierte und sichere Entscheidungen treffen können",
-				"description": "E-Tools, um fundierte und sichere Entscheidungen für Ihre Firma zu treffen "
+				"description": "E-Tools, um fundierte und sichere Entscheidungen für Ihre Firma zu treffen ",
+				"contact": "Kontakt"
 			},
 			"spanish":{
 				"title": "Conoce SpiceSolutions – soluciones que te permiten tomar decisiones conscientes y seguras.",
-				"description": "e-Herramientas para tomar decisiones conscientes y seguras, para tu negocio"
+				"description": "e-Herramientas para tomar decisiones conscientes y seguras, para tu negocio",
+				"contact": "Contacto"
 			}
 		},
 		"ec":{
@@ -24,16 +28,16 @@
 				"description":	"The system supports information flow and cost control in an organization"
 			},
 			"polish":{
-				"title": "Cześć",
-				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
+				"title": "System elektronicznego obiegu dokumentów - zamówień, faktur, umów, korespondencji",
+				"description": "To istotny dodatek do Twojej firmy\nSystem wspomaga przepływ informacji w organizacji i kontrolę wydatków"
 			},
 			"german":{
 				"title": "Elektronisches Dokumentenzirkulationssystem - Bestellungen, Rechnungen, Verträge, Korrespondenz ist eine wichtige Ergänzung für Ihre Firma",
 				"description": "Das System unterstützt den Informationsfluss innerhalb der Organisation und die Kontrolle der Ausgaben"
 			},
 			"spanish":{
-				"title": "a Sistema de circulación electrónica de documentos – pedidos, facturas, contratos, correspondencia es una herramienta esencial para tu empresa.",
-				"description": "El sistema soporta y mejora la circulación de documentos dentro de la organización y el control de gastos."
+				"title": "Sistema de circulación electrónica de documentos – pedidos, facturas, contratos, correspondencia es una herramienta esencial para tu empresa.",
+				"description": "Elsistema soporta y mejora la circulación de documentos dentro de la organización y el control de gastos."
 			}
 		},
 		"ew":{
@@ -42,8 +46,8 @@
 				"description":	"presents an implementation status and time for performing a task reports efficiency of actions and management It is a spicy seasoning; once you try it, work will never taste the same"
 			},
 			"polish":{
-				"title": "Cześć",
-				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
+				"title": "System do zarządzania projektami",
+				"description": "Prezentuje status realizacji i jednocześnie czas wykonania zadania\nRaportuje efektywność działania i zarządzania\nOstra przyprawa, po spróbowaniu praca nie smakuje już tak samo"
 			},
 			"german":{
 				"title": "Projektmanagementsystem",
@@ -60,8 +64,8 @@
 				"description":	"lleave e-applications payslips e-contracts e-PIT Working time records from geo-locations It fulfils duties of an employer that result from the Act on whistleblowing It cures information flow"
 			},
 			"polish":{
-				"title": "Cześć",
-				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
+				"title": "Elektroniczny obieg dokumentów kadrowo-płacowych związanych z pracownikami",
+				"description": "e-wnioski urlopowe informacje (paski) o wynagrodzeniu\ne-umowy\ne-PIT\nEwidencja czasu pracy z glokalizacją\nWypełnia obowiązki pracodawcy w zakresie ustawy o sygnalistach uzdrawia obieg informacji"
 			},
 			"german":{
 				"title": "Elektronischer Umlauf von mitarbeiterbezogenen HR- und Gehaltsabrechnungsdokumenten",
@@ -77,8 +81,8 @@
 				"description":	"Business Intelligence reporting online analytical financial data go to data, through analysis to action It makes taking informed and firm decisions of high quality possible and fast"
 			},
 			"polish":{
-				"title": "Cześć",
-				"description": "Spice solutions to cztery noweoczesne narzędzia dla biznesu. Dzięki eCurucumie odzyskasz kontrolę nad finansami i usprawnisz pracę działów księgowo - kadrowych. Z eWasabi zorganizujesz ..."
+				"title": "Dodatek, który przekształca dane w możliwości",
+				"description": "Raportowanie business Intelligence\nAnalityczne dane finansowe online przejdź od danych, przez analizy do działania\nUmożliwia podejmowanie świadomych i pewnych decyzji szybko i w wysokiej jakości"
 			},
 			"german":{
 				"title": "Eine Ergänzung, die Daten in Chancen verwandelt ",

@@ -8,6 +8,12 @@
 .opacyclick {
   pointer-events: none;
 }
+.upace {
+  text-transform: uppercase;
+}
+.pewr {
+  white-space: pre-wrap;
+}
 /* helpers */
 
 body {
@@ -22,7 +28,10 @@ body {
   background-color: rgba(0, 0, 0, 0.863);
   justify-content: center;
 }
-
+.langWrap {
+  position: absolute;
+  z-index: 6;
+}
 #wrapper {
   z-index: -1;
   background: linear-gradient(
@@ -156,7 +165,6 @@ fade in when pointer is on the center of the clock */
 p {
   margin: 0px;
   font-size: 18px;
-  text-transform: uppercase;
 }
 p.thin {
   font-weight: 100;
@@ -431,7 +439,7 @@ footer {
 }
 .text__carousel {
   max-height: 300px;
-  padding: 0vw 5vw;
+  /* padding: 0vw 0vw; */
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -461,7 +469,7 @@ footer {
   }
   .text__carousel {
     max-height: 300px;
-    padding: 0vw 5vw;
+    /* padding: 0vw 5vw; */
     overflow-y: scroll;
     overflow-x: hidden;
   }
