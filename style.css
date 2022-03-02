@@ -411,6 +411,14 @@ footer {
 }
 /* post carousel */
 /* general */
+/* img.hardTop{
+  max-height: 40vh;
+  max-width:100vh;
+} */
+.slick-list,
+.slick-track {
+  height: 100%;
+}
 .sesx {
   margin-top: 30px;
 }
@@ -420,7 +428,7 @@ footer {
 .ecx {
   margin-top: 30px;
   max-width: 2vw;
-  padding: 1vw 15vw 0vw;
+  padding: 10px 15px 0vw;
 }
 
 .productLogo {
@@ -428,13 +436,16 @@ footer {
   margin: 0 auto;
   padding: 0vw 15vw;
 }
+.product {
+  overflow-y: scroll;
+}
 .carousel {
-  max-width: 50vw;
+  max-width: 100vh;
   /* width: 100%; */
-  margin: 3vw auto;
+  margin: 40px auto;
 }
 .carousel__element {
-  max-height: 500px;
+  width: 30vh;
   margin: 0px auto;
 }
 .text__carousel {
@@ -448,7 +459,7 @@ footer {
   font-weight: 200;
   color: rgb(241, 241, 241);
 }
-@media screen and (max-width: 1424px) {
+/* @media screen and (max-width: 1424px) {
   .sesx {
     margin-top: 30px;
     padding: 1vw 0vw 0vw;
@@ -461,16 +472,16 @@ footer {
   .carousel {
     max-width: 50vw;
     /* width: 100%; */
-    margin: 3vw auto;
+/* margin: 3vw auto;
   }
   .carousel__element {
     max-height: 50vw;
     margin: 0px auto;
   }
   .text__carousel {
-    max-height: 300px;
-    /* padding: 0vw 5vw; */
-    overflow-y: scroll;
+    max-height: 300px; */
+/* padding: 0vw 5vw; */
+/* overflow-y: scroll;
     overflow-x: hidden;
   }
   .whiteTin {
@@ -482,7 +493,7 @@ footer {
   .fadeGradient {
     display: none;
   }
-}
+} */
 @media screen and (max-width: 600px) {
   .product {
     padding-top: 30px;
