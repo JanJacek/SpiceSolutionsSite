@@ -33,9 +33,15 @@ $(function(){
 // jj. carousels get different images for mobile and hardtop
 // eCurcuma pictures
 let ecHardtop = [
-  '<img class="hardTop carousel__element" src="./assets/slsec1.png"/>',
-  '<img class="hardTop carousel__element" src="./assets/slsec2.png"/>'
+  '<img class="hardTop carousel__element" src="./assets/pcomec-01.png"/>',
+  //'<img class="hardTop carousel__element" src="./assets/slsec2.png"/>'
 ]
+// jj. old ec image set
+// let ecHardtop = [
+//  
+//   '<img class="hardTop carousel__element" src="./assets/slsec1.png"/>',
+//   '<img class="hardTop carousel__element" src="./assets/slsec2.png"/>'
+// ]
 let ecMobileImgs = [
   '<img class="mobile" src="./assets/SpiceSscreens_eC4-01.png"/>',
   '<img class="mobile" src="./assets/SpiceSscreens_eC5-01.png"/>',
@@ -49,8 +55,8 @@ let ecMobileImgs = [
 
 // eWasabi pictures
 let ewHardtop = [
-  '<img class="hardTop carousel__element" src="./assets/slsew1.png"/>',
-  '<img class="hardTop carousel__element" src="./assets/slsew2.png"/>'
+  '<img class="hardTop carousel__element" src="./assets/pcomew-01.png"/>',
+  //'<img class="hardTop carousel__element" src="./assets/slsew2.png"/>'
 ]
 let ewMobileImgs = [
   '<img class="mobile" src="./assets/SpiceSscreens_eW3-01.png">',
@@ -64,8 +70,8 @@ let ewMobileImgs = [
 
 // eGinger pictures
 let egHardtop = [
-  '<img class="hardTop carousel__element" src="./assets/slseg1.png"/>',
-  '<img class="hardTop carousel__element" src="./assets/slseg2.png"/>'
+  '<img class="hardTop carousel__element" src="./assets/pcomeg-01.png"/>',
+  //'<img class="hardTop carousel__element" src="./assets/slseg2.png"/>'
 ]
 let egMobileImgs = [
   '<img class="mobile" src="./assets/SpiceSscreens_eG5-01.png">',
@@ -80,8 +86,8 @@ let egMobileImgs = [
 
 // eSaffton pictures
 let esHardtop = [
-  '<img class="hardTop carousel__element" src="./assets/slses1.png"/>',
-  '<img class="hardTop carousel__element" src="./assets/slses2.png"/>'
+  '<img class="hardTop carousel__element" src="./assets/pcomes-01.png"/>',
+  //'<img class="hardTop carousel__element" src="./assets/slses2.png"/>'
 ]
 let esMobileImgs = [
   '<img class="mobile" src="./assets/SpiceSscreens_eS8-01.png"/>',
